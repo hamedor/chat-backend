@@ -1,0 +1,4 @@
+.env
+seeders
+dist
+node_modules
