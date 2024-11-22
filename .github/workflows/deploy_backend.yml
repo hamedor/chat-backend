@@ -30,10 +30,9 @@ jobs:
             cd /var/www/chat_backend
                if [ ! -d "chat_backend" ]; then
               git clone https://github.com/hamedor/chat_backend.git chat-backend
-            else
+            fi
+      
             cd chat-backend
-
-         
 
             echo "DB_HOST=${{ secrets.APP_PORT }}" >> .env
             echo "DB_HOST=${{ secrets.DB_HOST }}" >> .env
